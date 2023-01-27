@@ -9,6 +9,5 @@ COPY . /app
 #Install any needed packages specified in package.json
 RUN npm install
 
-
 #Run app when the container launches
 CMD ["npm", "start"]
