@@ -9,6 +9,11 @@ COPY . /app
 #Install any needed packages specified in packages.json
 RUN npm install
 
+# Expose port 3000 for accessing  the app
+EXPOSE 3000
+
+EXPOSE $PORT
+
 #Run app when the container launches
 CMD ["npm", "start"]
 
